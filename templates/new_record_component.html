@@ -1,0 +1,19 @@
+<form class="form-inline" ng-submit="$ctrl.submitForm()">
+  <div class="form-group">
+    <label for="address">Address:</label>
+    <input type="text" class="form-control" id="address" ng-model="$ctrl.address">
+  </div>
+  <div class="form-group">
+    <label for="volume">Volume:</label>
+    <input type="numbers" class="form-control" id="volume" ng-model="$ctrl.volume">
+  </div>
+  <div class="form-group">
+    <label for="sa">Surface Area:</label>
+    <input type="numbers" class="form-control" id="sa" ng-model="$ctrl.sa">
+  </div>
+  <div class="form-group">
+    <label for="propertystatus">Status:</label>
+    <input type="text" class="form-control" id="propertystatus" ng-model="$ctrl.propertystatus">
+  </div>
+  <button type="submit" class="btn btn-default" id="submitButton">Submit</button>
+</form>

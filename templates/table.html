@@ -1,0 +1,18 @@
+<table class="table">
+     <thead>
+        <tr>
+          <th>Address</th>
+          <th>Volume</th>
+          <th>Surface Area</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="property in $ctrl.Properties" ng-class="{'success': property.Status == 'Sold', 'warning': property.Status != 'Sold'}">
+          <td>{{:: property.Address }}</td>
+          <td>{{:: property.Volume }}</td>
+          <td>{{:: property.SurfaceArea }}</td>
+          <td>{{:: property.Status }}</td>
+        </tr>
+     </tbody>
+</table>
